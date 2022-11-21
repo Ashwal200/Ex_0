@@ -9,7 +9,7 @@ all: mains maindloop maindrec loops loopd recursived recursives
 
 .PHONY: clean 
 clean: 
-	rm -rf *.o *.a *.so maindloop mains maindrec
+	rm -rf *.o *.a *.so maindloop l mains maindrec
 	
 	
 loops: libclassloops.a
