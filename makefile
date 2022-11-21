@@ -1,7 +1,7 @@
 ##dictionery
 CC = gcc -c 
 CFLAGS = -Wall -g
-CLIB = ar rcs  ### Maybe rcu
+CLIB = ar rcs  
 CLIBD = gcc -shared -o 
 CMAIN = gcc -Wall -o
 
