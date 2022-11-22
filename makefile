@@ -35,11 +35,11 @@ maindloop: main.o libclassloops.so
 maindrec: main.o libclassrec.so 
 	gcc -Wall main.o ./libclassrec.so -o maindrec -lm
 
-basicClassification.o: basicClassification.c NumClass.h
+basicClassification.o: basicClassification.c 
 	$(CC) $(CFLAGS) -fPIC basicClassification.c	
-advancedClassificationLoop.o: advancedClassificationLoop.c NumClass.h
+advancedClassificationLoop.o: advancedClassificationLoop.c 
 	$(CC) $(CFLAGS) -fPIC advancedClassificationLoop.c
-advancedClassificationRecursion.o: advancedClassificationRecursion.c NumClass.h
+advancedClassificationRecursion.o: advancedClassificationRecursion.c 
 	$(CC) $(CFLAGS) -fPIC advancedClassificationRecursion.c
 main.o: main.c NumClass.h
 	$(CC) $(CFLAGS) main.c 	
