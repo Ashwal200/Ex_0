@@ -4,13 +4,6 @@ CFLAGS = -Wall -g
 CLIB = ar rcs  
 CLIBD = gcc -shared -o 
 
-
-all: mains maindloop maindrec libclassloops.a libclassloops.so libclassrec.a libclassrec.so 
-
-.PHONY: clean 
-clean: 
-	rm -rf *.o *.a *.so maindloop mains maindrec
-	
 mains: main.o libclassrec.a 
 	gcc -Wall main.o ./libclassrec.a -o mains -lm
 maindloop: main.o libclassloops.so 
@@ -44,7 +37,11 @@ advancedClassificationRecursion.o: advancedClassificationRecursion.c
 main.o: main.c NumClass.h
 	$(CC) $(CFLAGS) main.c 	
 
+all: mains maindloop maindrec libclassloops.a libclassloops.so libclassrec.a libclassrec.so 
 
+.PHONY: clean 
+clean: 
+	rm -rf *.o *.a *.so maindloop mains maindrec
 
 
 
