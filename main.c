@@ -4,9 +4,7 @@
 
 int main(){
     int start , end;
-    printf("Enter two numbers :\n");
-    scanf("%d" , & start);
-    scanf("%d" , & end);
+    scanf("%d %d" , & start , & end);
     printf("The Armstrong numbers are:"); 
     for (int i = start ; i < end; i++)
     {            
