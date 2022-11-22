@@ -5,7 +5,7 @@ CLIB = ar rcs
 CLIBD = gcc -shared -o 
 CMAIN = gcc -Wall -o
 
-all: mains maindloop maindrec loops loopd recursived recursives
+all: mains maindloop maindrec libclassloops.a libclassloops.so libclassrec.a libclassrec.so 
 
 .PHONY: clean 
 clean: 
