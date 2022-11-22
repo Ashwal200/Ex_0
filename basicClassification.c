@@ -7,7 +7,7 @@ int factorial(int num){
    }
    return sum;
 }
-
+//is strong func
 int isStrong(int numToCheck){
    int inputnum = numToCheck;
    int sumToCheck = 0;
@@ -20,7 +20,7 @@ int isStrong(int numToCheck){
 
 
 
-// is primw
+// is prime func
 int isPrime(int numToCheck){
    if(numToCheck < 1){ return 0;}
    for (int i = 2; i <= sqrt(numToCheck); ++i) {
