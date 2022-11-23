@@ -9,13 +9,18 @@ int factorial(int num){
 }
 //is strong func
 int isStrong(int numToCheck){
-   int inputnum = numToCheck;
-   int sumToCheck = 0;
-   while(numToCheck!= 0){
+    if (numToCheck == 0)
+    {
+        return 0;
+    }
+    int inputnum = numToCheck;
+    int sumToCheck = 0;
+    while(numToCheck!= 0)
+       {
        sumToCheck += factorial(numToCheck%10);
        numToCheck = numToCheck/10;
-   }
-   return inputnum == sumToCheck;
+       }
+    return inputnum == sumToCheck;
 }
 
 
