@@ -1,4 +1,4 @@
-##dictionery
+#Dictionery:
 CC = gcc -c 
 CFLAGS = -Wall -g
 CLIB = ar rcs  
